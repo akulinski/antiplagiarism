@@ -27,11 +27,9 @@ public class FileStorageService implements IStorageService {
 
     @Override
     @Transactional
-    public void save(MultipartFile multipartFile) {
+    public void save(MultipartFile multipartFile) throws IOException {
 
         String fileName = StringUtils.cleanPath(Objects.requireNonNull(multipartFile.getOriginalFilename()));
-
-        try {
 
             if (fileName.contains("..")) {
                 throw new IllegalStateException(FileExceptions.SORRY_FILENAME_CONTAINS_INVALID_PATH_SEQUENCE.getValue() + fileName);
@@ -45,8 +43,5 @@ public class FileStorageService implements IStorageService {
 
             Files.copy(multipartFile.getInputStream(), targetLocation, StandardCopyOption.REPLACE_EXISTING);
 
-        } catch (IOException ex) {
-            throw new IllegalStateException(FileExceptions.COULD_NOT_STORE_FILE.getValue() + fileName + FileExceptions.PLEASE_TRY_AGAIN.getValue(), ex);
-        }
     }
 }

@@ -1,0 +1,64 @@
+
+file:
+    uploadDir: src/test/testfiles
+
+server:
+    servlet:
+        session:
+            cookie:
+                http-only: true
+
+
+logging:
+    level:
+        ROOT: DEBUG
+        com.antiplagiarism.fileuploadservice: DEBUG
+
+
+spring:
+
+    application:
+        name: antiplagiarismuploadservice
+    profiles:
+        active: dev
+
+    devtools:
+        restart:
+            enabled: true
+
+    jackson:
+        serialization:
+            indent-output: true
+    datasource:
+        type: com.zaxxer.hikari.HikariDataSource
+        username: sa
+        password:
+        hikari:
+            poolName: Hikari
+            auto-commit: false
+
+        url: jdbc:h2:mem:test;DB_CLOSE_ON_EXIT=FALSE
+    ###
+    #   H2 Settings
+    ###
+    h2:
+        console:
+            enabled: true
+            path: /console
+            settings:
+                trace: false
+                web-allow-others: false
+
+    jpa:
+        database-platform: org.hibernate.dialect.H2Dialect
+        database: H2
+        show-sql: true
+        properties:
+            hibernate.id.new_generator_mappings: true
+            hibernate.jdbc.time_zone: UTC
+            hibernate.connection.provider_disables_autocommit: true
+        hibernate:
+            ddl-auto: create
+            naming:
+                physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+                implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy

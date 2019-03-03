@@ -22,14 +22,15 @@ public class DatabaseStorageService implements IStorageService{
 
     @Override
     @Transactional
-    public void save(MultipartFile multipartFile) {
+    public void save(MultipartFile multipartFile) throws IOException {
+
+        if(multipartFile.getBytes() == null){
+            throw new IOException("No content of file");
+        }
+
         DocumentEntity documentEntity = new DocumentEntity();
         documentEntity.setTitle(multipartFile.getName());
-        try {
-            documentEntity.setBytes(multipartFile.getBytes());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        documentEntity.setBytes(multipartFile.getBytes());
         documentRepository.save(documentEntity);
     }
 }

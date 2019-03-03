@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
 import javax.transaction.Transactional;
+import java.io.IOException;
 
 @Service
 public class SaveDocumentEventListenerService {
@@ -33,7 +34,7 @@ public class SaveDocumentEventListenerService {
 
     @Subscribe
     @Transactional
-    public void onSaveDocumentEvent(SaveDocumentEvent saveDocumentEvent) {
+    public void onSaveDocumentEvent(SaveDocumentEvent saveDocumentEvent) throws IOException {
         fileStorage.save(saveDocumentEvent.getMultipartFile());
         databaseStorage.save(saveDocumentEvent.getMultipartFile());
     }
