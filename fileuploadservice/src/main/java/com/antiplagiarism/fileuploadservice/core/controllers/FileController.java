@@ -12,8 +12,6 @@ import org.springframework.web.multipart.MultipartFile;
 @RestController
 public class FileController {
 
-    private static final String FILE_UPLOADED_SUCCESSFULLY = "File Uploaded successfully";
-
     private final EventBus eventBus;
 
     @Autowired
@@ -24,6 +22,6 @@ public class FileController {
     @PostMapping("/upload/document")
     public ResponseEntity uploadDocument(@RequestParam("document") MultipartFile document) {
         eventBus.post(new SaveDocumentEvent(document));
-        return ResponseEntity.ok(FILE_UPLOADED_SUCCESSFULLY);
+        return ResponseEntity.ok(ControllerConstants.FILE_UPLOADED_WAS_SCHEDULED.getValue());
     }
 }

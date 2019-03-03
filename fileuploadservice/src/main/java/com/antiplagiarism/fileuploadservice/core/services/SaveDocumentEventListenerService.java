@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
+import javax.transaction.Transactional;
 
 @Service
 public class SaveDocumentEventListenerService {
@@ -31,6 +32,7 @@ public class SaveDocumentEventListenerService {
     }
 
     @Subscribe
+    @Transactional
     public void onSaveDocumentEvent(SaveDocumentEvent saveDocumentEvent) {
         fileStorage.save(saveDocumentEvent.getMultipartFile());
         databaseStorage.save(saveDocumentEvent.getMultipartFile());
