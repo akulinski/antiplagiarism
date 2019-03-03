@@ -1,4 +1,4 @@
-package com.antiplagiarism.fileuploadservice;
+package com.antiplagiarism.fileuploadservice.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
