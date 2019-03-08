@@ -1,0 +1,56 @@
+version: '3.5'
+
+services:
+
+  zookeeper:
+      container_name: cluster_zookeeper
+      image: wurstmeister/zookeeper
+      ports:
+        - "2181:2181"
+
+
+  kafka1:
+      container_name: cluster_kafka1
+      image: wurstmeister/kafka
+      ports:
+        - "9092:9092"
+      hostname: cluster_kafka1
+      environment:
+        KAFKA_ZOOKEEPER_CONNECT: cluster_zookeeper:2181
+        KAFKA_CREATE_TOPICS: "documents:1:3"
+        HOSTNAME_COMMAND: curl http://169.254.169.254/latest/meta-data/public-hostname
+        KAFKA_ADVERTISED_LISTENERS: INSIDE://:9092,OUTSIDE://_{HOSTNAME_COMMAND}:9094
+        KAFKA_LISTENERS: INSIDE://:9092,OUTSIDE://:9094
+        KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT
+        KAFKA_INTER_BROKER_LISTENER_NAME: INSIDE
+      depends_on:
+        - zookeeper
+
+  kafka2:
+      container_name: cluster_kafka2
+      image: wurstmeister/kafka
+      ports:
+        - "9093:9092"
+      hostname: cluster_kafka2
+      environment:
+        KAFKA_ZOOKEEPER_CONNECT: cluster_zookeeper:2181
+        KAFKA_CREATE_TOPICS: "documents:1:3"
+        HOSTNAME_COMMAND: curl http://169.254.169.254/latest/meta-data/public-hostname
+        KAFKA_ADVERTISED_LISTENERS: INSIDE://:9092,OUTSIDE://_{HOSTNAME_COMMAND}:9094
+        KAFKA_LISTENERS: INSIDE://:9092,OUTSIDE://:9094
+        KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT
+        KAFKA_INTER_BROKER_LISTENER_NAME: INSIDE
+      depends_on:
+        - kafka1
+  kafka3:
+      container_name: cluster_kafka3
+      image: wurstmeister/kafka
+      ports:
+        - "9094:9092"
+      hostname: cluster_kafka3
+      environment:
+        KAFKA_ADVERTISED_LISTENERS: cluster_kafka3
+        KAFKA_ZOOKEEPER_CONNECT: cluster_zookeeper:2181
+        KAFKA_CREATE_TOPICS: "documents:1:3"
+      depends_on:
+        - kafka2

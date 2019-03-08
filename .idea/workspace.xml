@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0e35b4e-550e-4aa4-8965-dba8f676a992" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/config/GuavaConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/config/KafkaConsumerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/config/KafkaProducerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/core/services/ByteToStringService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/domain/events/ConvertByteToStringEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filechecker/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filechecker/src/main/resources/application-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filechecker/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filechecker/src/test/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fileuploadservice/src/main/java/com/antiplagiarism/fileuploadservice/core/services/KafkaStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileuploadservice/src/main/java/com/antiplagiarism/fileuploadservice/core/services/IStorageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/fileuploadservice/src/main/java/com/antiplagiarism/fileuploadservice/core/services/IStorageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileuploadservice/src/main/java/com/antiplagiarism/fileuploadservice/core/services/SaveDocumentEventListenerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/fileuploadservice/src/main/java/com/antiplagiarism/fileuploadservice/core/services/SaveDocumentEventListenerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileuploadservice/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fileuploadservice/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileuploadservice/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fileuploadservice/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileuploadservice/src/test/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fileuploadservice/src/test/resources/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/fileuploadservice/target/" />
     <ignored path="$PROJECT_DIR$/filechecker/target/" />
@@ -69,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/config/KafkaConsumerConfig.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="640">
-              <caret line="70" column="27" lean-forward="true" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
+              <caret line="70" column="27" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
               <folding>
                 <element signature="e#1229#1230#0" expanded="true" />
                 <element signature="e#1269#1270#0" expanded="true" />
@@ -93,8 +74,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/core/services/ByteToStringService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="27" column="8" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+            <state relative-caret-position="226">
+              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#364#365#0" expanded="true" />
@@ -234,233 +215,7 @@
             <path>
               <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
               <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filechecker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filechecker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filechecker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filechecker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filechecker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filechecker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filecheckservice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filechecker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filecheckservice" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filechecker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filecheckservice" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filechecker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filecheckservice" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filechecker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filecheckservice" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filechecker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filecheckservice" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="events" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filechecker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filechecker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
               <item name="fileuploadservice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="fileuploadservice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="fileuploadservice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="fileuploadservice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="fileuploadservice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="fileuploadservice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="fileuploadservice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="fileuploadservice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="fileuploadservice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="fileuploadservice" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="fileuploadservice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="fileuploadservice" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="fileuploadservice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="fileuploadservice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="fileuploadservice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -477,7 +232,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552047541371" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552048887680" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -651,7 +406,7 @@
       <workItem from="1551621964069" duration="611000" />
       <workItem from="1551992860657" duration="2312000" />
       <workItem from="1552030262681" duration="6321000" />
-      <workItem from="1552037449339" duration="2542000" />
+      <workItem from="1552037449339" duration="3367000" />
     </task>
     <task id="LOCAL-00001" summary="Added option of storing documents is files and in database">
       <created>1551600626022</created>
@@ -681,7 +436,14 @@
       <option name="project" value="LOCAL" />
       <updated>1552034768650</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Created basic structure of file checker service">
+      <created>1552047605518</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1552047605518</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -717,11 +479,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32262000" />
+    <option name="totallyTimeSpent" value="33087000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32459894" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -803,7 +564,8 @@
     <MESSAGE value="Added constants and checking whether file with same name already exists." />
     <MESSAGE value="Created tests for storage controllers" />
     <MESSAGE value="Created Kafka consumer config" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created Kafka consumer config" />
+    <MESSAGE value="Created basic structure of file checker service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created basic structure of file checker service" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1159,7 +921,7 @@
     <entry file="file://$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/config/KafkaConsumerConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="640">
-          <caret line="70" column="27" lean-forward="true" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
+          <caret line="70" column="27" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
           <folding>
             <element signature="e#1229#1230#0" expanded="true" />
             <element signature="e#1269#1270#0" expanded="true" />
@@ -1169,8 +931,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/core/services/ByteToStringService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="27" column="8" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+        <state relative-caret-position="226">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#364#365#0" expanded="true" />
