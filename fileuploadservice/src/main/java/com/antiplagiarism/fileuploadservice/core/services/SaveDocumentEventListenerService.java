@@ -1,13 +1,10 @@
 package com.antiplagiarism.fileuploadservice.core.services;
 
-import com.antiplagiarism.fileuploadservice.domain.DocumentDTO;
-import com.antiplagiarism.fileuploadservice.domain.events.DocumentAddedKafkaEvent;
 import com.antiplagiarism.fileuploadservice.domain.events.SaveDocumentEvent;
 import com.google.common.eventbus.EventBus;
 import com.google.common.eventbus.Subscribe;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
@@ -23,14 +20,15 @@ public class SaveDocumentEventListenerService {
 
     private final IStorageService databaseStorage;
 
-    private final KafkaTemplate<String, DocumentAddedKafkaEvent> kafkaTemplate;
+    private final IStorageService kafkaStorage;
+
 
     @Autowired
-    public SaveDocumentEventListenerService(EventBus eventBus, @Qualifier("fileStorage") IStorageService fileStorage, @Qualifier("databaseStorage") IStorageService databaseStorage, KafkaTemplate<String, DocumentAddedKafkaEvent> kafkaTemplate) {
+    public SaveDocumentEventListenerService(EventBus eventBus, @Qualifier("fileStorage") IStorageService fileStorage, @Qualifier("databaseStorage") IStorageService databaseStorage, @Qualifier("kafkaStorage") IStorageService kafkaStorage) {
         this.eventBus = eventBus;
         this.fileStorage = fileStorage;
         this.databaseStorage = databaseStorage;
-        this.kafkaTemplate = kafkaTemplate;
+        this.kafkaStorage = kafkaStorage;
     }
 
     @PostConstruct
@@ -38,18 +36,21 @@ public class SaveDocumentEventListenerService {
         this.eventBus.register(this);
     }
 
-    //TODO multithreding
     @Subscribe
     @Transactional
     public void onSaveDocumentEvent(SaveDocumentEvent saveDocumentEvent) throws IOException {
-        fileStorage.save(saveDocumentEvent.getMultipartFile());
-        databaseStorage.save(saveDocumentEvent.getMultipartFile());
-        
-        DocumentAddedKafkaEvent documentAddedKafkaEvent = new DocumentAddedKafkaEvent();
-        DocumentDTO documentDTO = new DocumentDTO();
-        documentDTO.setTitle(saveDocumentEvent.getMultipartFile().getName());
-        documentAddedKafkaEvent.setDocumentDTO(documentDTO);
-        documentAddedKafkaEvent.setDocumentData(saveDocumentEvent.getMultipartFile().getBytes());
-        kafkaTemplate.send("antiplagiarism",documentAddedKafkaEvent);
+        saveInNewThread(fileStorage, saveDocumentEvent);
+        saveInNewThread(databaseStorage, saveDocumentEvent);
+        saveInNewThread(kafkaStorage, saveDocumentEvent);
+    }
+
+    private void saveInNewThread(IStorageService iStorageService, SaveDocumentEvent saveDocumentEvent) {
+        new Thread(() -> {
+            try {
+                iStorageService.save(saveDocumentEvent.getMultipartFile());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }).start();
     }
 }

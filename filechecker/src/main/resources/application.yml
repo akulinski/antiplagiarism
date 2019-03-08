@@ -4,12 +4,10 @@
 # This configuration will be overridden by the Spring profile you use,
 # for example application-dev.yml if you use the "dev" profile.
 #
-# More information on profiles: https://www.jhipster.tech/profiles/
-# More information on configuration properties: https://www.jhipster.tech/common-application-properties/
 # ===================================================================
 spring:
     application:
-        name: antiplagiarismuploadservice
+        name: antiplagiarismfilecheckerservice
     jpa:
         open-in-view: false
         properties:

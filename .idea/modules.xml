@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/antiplagiarism.iml" filepath="$PROJECT_DIR$/.idea/antiplagiarism.iml" />
+      <module fileurl="file://$PROJECT_DIR$/filechecker/demo.iml" filepath="$PROJECT_DIR$/filechecker/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/fileuploadservice/fileuploadservice.iml" filepath="$PROJECT_DIR$/fileuploadservice/fileuploadservice.iml" />
     </modules>
   </component>
