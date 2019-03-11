@@ -10,8 +10,12 @@ import org.springframework.data.annotation.LastModifiedDate;
 import javax.persistence.*;
 import java.util.Date;
 
-@Entity(name="Document")
-@Getter @Setter @NoArgsConstructor @AllArgsConstructor
+@Entity
+@Table
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class DocumentEntity {
 
     @Id
@@ -22,7 +26,7 @@ public class DocumentEntity {
     @Column(name = "title")
     private String title;
 
-    @Column(name = "bytes",columnDefinition = "NVARCHAR(MAX)")
+    @Column(name = "bytes")
     private byte[] bytes;
 
     @Column

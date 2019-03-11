@@ -1,11 +1,12 @@
 package com.antiplagiarism.fileuploadservice.core.services;
 
 import com.antiplagiarism.fileuploadservice.config.FileStorageProperties;
+import com.antiplagiarism.fileuploadservice.domain.events.SaveDocumentEvent;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
-import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -27,21 +28,22 @@ public class FileStorageService implements IStorageService {
 
     @Override
     @Transactional
-    public void save(MultipartFile multipartFile) throws IOException {
+    @Async
+    public void save(SaveDocumentEvent saveDocumentEvent) throws IOException {
 
-        String fileName = StringUtils.cleanPath(Objects.requireNonNull(multipartFile.getOriginalFilename()));
+        String fileName = StringUtils.cleanPath(Objects.requireNonNull(saveDocumentEvent.getFileName()));
 
-            if (fileName.contains("..")) {
-                throw new IllegalStateException(FileExceptions.SORRY_FILENAME_CONTAINS_INVALID_PATH_SEQUENCE.getValue() + fileName);
-            }
+        if (fileName.contains("..")) {
+            throw new IllegalStateException(FileExceptions.SORRY_FILENAME_CONTAINS_INVALID_PATH_SEQUENCE.getValue() + fileName);
+        }
 
-            Path targetLocation = this.fileStorageLocation.resolve(fileName);
+        Path targetLocation = this.fileStorageLocation.resolve(fileName);
 
-            if(targetLocation.toFile().exists()){
-                throw new IllegalStateException(FileExceptions.FILE_WITH_THAT_NAME_ALREADY_EXISTS.getValue());
-            }
+        if (targetLocation.toFile().exists()) {
+            throw new IllegalStateException(FileExceptions.FILE_WITH_THAT_NAME_ALREADY_EXISTS.getValue());
+        }
 
-            Files.copy(multipartFile.getInputStream(), targetLocation, StandardCopyOption.REPLACE_EXISTING);
+        Files.copy(saveDocumentEvent.getInputStream(), targetLocation, StandardCopyOption.REPLACE_EXISTING);
 
     }
 }

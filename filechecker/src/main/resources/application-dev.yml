@@ -1,9 +1,8 @@
 
 logging:
     level:
-        ROOT: DEBUG
-        com.antiplagiarism.fileuploadservice: DEBUG
-
+        ROOT: WARN
+        com.antiplagiarism.filecheckservice: WARN
 spring:
 
     profiles:
@@ -17,33 +16,21 @@ spring:
         serialization:
             indent-output: true
     datasource:
-        type: com.zaxxer.hikari.HikariDataSource
-        username: sa
-        password:
-        hikari:
-            poolName: Hikari
-            auto-commit: false
-
-        url: jdbc:h2:mem:test;DB_CLOSE_ON_EXIT=FALSE
-    ###
-    #   H2 Settings
-    ###
-    h2:
-        console:
-            enabled: true
-            path: /console
-            settings:
-                trace: false
-                web-allow-others: false
-
+      type: com.zaxxer.hikari.HikariDataSource
+      url: jdbc:postgresql://35.240.41.154:5432/filecheckerservice
+      username: developer
+      password: developer
+      hikari:
+        poolName: Hikari
+        auto-commit: false
     jpa:
-        database-platform: org.hibernate.dialect.H2Dialect
-        database: H2
-        show-sql: true
-        properties:
-            hibernate.id.new_generator_mappings: true
-            hibernate.connection.provider_disables_autocommit: true
-        hibernate:
-            ddl-auto: create
-
+      database-platform: org.hibernate.dialect.PostgreSQLDialect
+      database: POSTGRESQL
+      show-sql: false
+      properties:
+        hibernate.id.new_generator_mappings: true
+        hibernate.connection.provider_disables_autocommit: true
+        hibernate.generate_statistics: true
+      hibernate:
+        ddl-auto: update
 

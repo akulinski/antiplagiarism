@@ -22,6 +22,8 @@ spring:
         multipart:
             max-file-size: 100MB
             max-request-size: 100MB
+
+
 file:
     uploadDir: uploads
 
@@ -31,7 +33,12 @@ server:
             cookie:
                 http-only: true
 
+    port: 8081
+
+
+
 
 kafka:
     topic: antiplagiarism
     bootstrapAddress: 192.168.0.26:9092,192.168.0.26:9093,192.168.0.26:9094
+

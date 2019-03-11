@@ -1,12 +1,13 @@
 package com.antiplagiarism.fileuploadservice.core.services;
 
-import com.antiplagiarism.fileuploadservice.domain.DocumentDTO;
-import com.antiplagiarism.fileuploadservice.domain.events.DocumentAddedKafkaEvent;
+import com.antiplagiarism.fileuploadservice.domain.events.SaveDocumentEvent;
+import domain.DocumentDTO;
+import domain.events.DocumentAddedKafkaEvent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.core.KafkaTemplate;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
-import org.springframework.web.multipart.MultipartFile;
 
 import javax.transaction.Transactional;
 import java.io.IOException;
@@ -26,12 +27,13 @@ public class KafkaStorage implements IStorageService {
 
     @Override
     @Transactional
-    public void save(MultipartFile multipartFile) throws IOException {
+    @Async
+    public void save(SaveDocumentEvent saveDocumentEvent) throws IOException {
         DocumentAddedKafkaEvent documentAddedKafkaEvent = new DocumentAddedKafkaEvent();
         DocumentDTO documentDTO = new DocumentDTO();
-        documentDTO.setTitle(multipartFile.getName());
+        documentDTO.setTitle(saveDocumentEvent.getFileName());
         documentAddedKafkaEvent.setDocumentDTO(documentDTO);
-        documentAddedKafkaEvent.setDocumentData(multipartFile.getBytes());
-        kafkaTemplate.send(kafkaTopic,documentAddedKafkaEvent);
+        documentAddedKafkaEvent.setDocumentData(saveDocumentEvent.getBytes());
+        kafkaTemplate.send(kafkaTopic, documentAddedKafkaEvent);
     }
 }

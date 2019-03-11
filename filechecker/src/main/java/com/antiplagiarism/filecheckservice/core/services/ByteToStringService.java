@@ -1,6 +1,7 @@
 package com.antiplagiarism.filecheckservice.core.services;
 
 import com.antiplagiarism.filecheckservice.domain.events.ConvertByteToStringEvent;
+import com.antiplagiarism.filecheckservice.domain.events.SplitTextEvent;
 import com.google.common.eventbus.EventBus;
 import com.google.common.eventbus.Subscribe;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,13 +21,14 @@ public class ByteToStringService {
     }
 
     @PostConstruct
-    public void registerToEventBus(){
+    public void registerToEventBus() {
         this.eventBus.register(this);
+
     }
 
     @Subscribe
-    public void handleConvertByteToStringEvent(ConvertByteToStringEvent convertByteToStringEvent){
+    public void handleConvertByteToStringEvent(ConvertByteToStringEvent convertByteToStringEvent) {
         String converted = new String(convertByteToStringEvent.getDocumentData(), StandardCharsets.UTF_8);
+        this.eventBus.post(new SplitTextEvent(converted));
     }
-
 }

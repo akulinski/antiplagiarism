@@ -1,4 +1,4 @@
-package com.antiplagiarism.fileuploadservice.domain;
+package domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

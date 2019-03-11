@@ -1,6 +1,7 @@
-package com.antiplagiarism.fileuploadservice.domain.events;
+package domain.events;
 
-import com.antiplagiarism.fileuploadservice.domain.DocumentDTO;
+import domain.DocumentDTO;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -8,7 +9,10 @@ import lombok.Setter;
 
 import java.util.Arrays;
 
-@Getter @Setter @NoArgsConstructor @AllArgsConstructor
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class DocumentAddedKafkaEvent {
     DocumentDTO documentDTO;
     byte[] documentData;

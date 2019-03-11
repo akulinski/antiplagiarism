@@ -2,6 +2,7 @@ package com.antiplagiarism.fileuploadservice.core.services;
 
 import com.antiplagiarism.fileuploadservice.config.FileStorageProperties;
 import com.antiplagiarism.fileuploadservice.core.repositories.DocumentRepository;
+import com.antiplagiarism.fileuploadservice.domain.events.SaveDocumentEvent;
 import com.thedeanda.lorem.LoremIpsum;
 import org.junit.After;
 import org.junit.AfterClass;
@@ -82,7 +83,7 @@ public class FileStorageServiceTest {
         when(multipartFile.getOriginalFilename()).thenReturn("testFile.doc");
         when(multipartFile.getInputStream()).thenReturn(inputStream);
 
-        fileStorageService.save(multipartFile);
+        fileStorageService.save(new SaveDocumentEvent(multipartFile.getName(),multipartFile.getBytes(),null));
         String fileName = StringUtils.cleanPath(Objects.requireNonNull(multipartFile.getOriginalFilename()));
         File file = fileStorageLocation.resolve(fileName).toFile();
         assertTrue(file.exists());
@@ -99,7 +100,7 @@ public class FileStorageServiceTest {
         when(multipartFile.getOriginalFilename()).thenReturn("testFile.doc");
         when(multipartFile.getInputStream()).thenReturn(inputStream);
 
-        fileStorageService.save(multipartFile);
+        fileStorageService.save(new SaveDocumentEvent(multipartFile.getName(),multipartFile.getBytes(),null));
     }
 
     @Test(expected = IllegalStateException.class)
@@ -113,7 +114,7 @@ public class FileStorageServiceTest {
         when(multipartFile.getOriginalFilename()).thenReturn("testFile...doc");
         when(multipartFile.getInputStream()).thenReturn(inputStream);
 
-        fileStorageService.save(multipartFile);
-        fileStorageService.save(multipartFile);
+        fileStorageService.save(new SaveDocumentEvent(multipartFile.getName(),multipartFile.getBytes(),null));
+        fileStorageService.save(new SaveDocumentEvent(multipartFile.getName(),multipartFile.getBytes(),null));
     }
 }

@@ -1,6 +1,7 @@
 package com.antiplagiarism.fileuploadservice.config;
 
-import com.antiplagiarism.fileuploadservice.domain.events.DocumentAddedKafkaEvent;
+import domain.events.DocumentAddedKafkaEvent;
+import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
 import org.springframework.beans.factory.annotation.Value;
@@ -35,10 +36,14 @@ public class KafkaProducerConfig {
         configProps.put(
                 ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG,
                 JsonSerializer.class);
+
+        configProps.put(ProducerConfig.MAX_REQUEST_SIZE_CONFIG, "7000000");
+
         return new DefaultKafkaProducerFactory<>(configProps);
     }
 
     @Bean
+
     public KafkaTemplate<String, DocumentAddedKafkaEvent> kafkaTemplate() {
         return new KafkaTemplate<>(producerFactory());
     }

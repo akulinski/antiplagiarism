@@ -5,11 +5,13 @@ import com.google.common.eventbus.EventBus;
 import com.google.common.eventbus.Subscribe;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
 import javax.transaction.Transactional;
 import java.io.IOException;
+import java.util.concurrent.atomic.AtomicReference;
 
 @Service
 public class SaveDocumentEventListenerService {
@@ -38,19 +40,17 @@ public class SaveDocumentEventListenerService {
 
     @Subscribe
     @Transactional
-    public void onSaveDocumentEvent(SaveDocumentEvent saveDocumentEvent) throws IOException {
-        saveInNewThread(fileStorage, saveDocumentEvent);
-        saveInNewThread(databaseStorage, saveDocumentEvent);
-        saveInNewThread(kafkaStorage, saveDocumentEvent);
+    @Async
+    public void onSaveDocumentEvent(SaveDocumentEvent saveDocumentEvent) {
+        AtomicReference<SaveDocumentEvent> multipartFileAtomicReference = new AtomicReference<>();
+        multipartFileAtomicReference.set(saveDocumentEvent);
+        try {
+            fileStorage.save(multipartFileAtomicReference.get());
+            databaseStorage.save(multipartFileAtomicReference.get());
+            kafkaStorage.save(multipartFileAtomicReference.get());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
-    private void saveInNewThread(IStorageService iStorageService, SaveDocumentEvent saveDocumentEvent) {
-        new Thread(() -> {
-            try {
-                iStorageService.save(saveDocumentEvent.getMultipartFile());
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }).start();
-    }
 }

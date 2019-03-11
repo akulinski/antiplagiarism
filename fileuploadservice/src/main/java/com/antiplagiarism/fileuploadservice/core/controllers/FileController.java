@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.io.IOException;
+
 @RestController
 public class FileController {
 
@@ -20,8 +22,8 @@ public class FileController {
     }
 
     @PostMapping("/upload/document")
-    public ResponseEntity uploadDocument(@RequestParam("document") MultipartFile document) {
-        eventBus.post(new SaveDocumentEvent(document));
+    public ResponseEntity uploadDocument(@RequestParam("document") MultipartFile document) throws IOException {
+        eventBus.post(new SaveDocumentEvent(document.getOriginalFilename(),document.getBytes(),document.getInputStream()));
         return ResponseEntity.ok(ControllerConstants.FILE_UPLOADED_WAS_SCHEDULED.getValue());
     }
 }

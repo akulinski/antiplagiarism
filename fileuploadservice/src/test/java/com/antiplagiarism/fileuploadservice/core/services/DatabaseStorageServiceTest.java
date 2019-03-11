@@ -2,6 +2,7 @@ package com.antiplagiarism.fileuploadservice.core.services;
 
 import com.antiplagiarism.fileuploadservice.core.repositories.DocumentRepository;
 import com.antiplagiarism.fileuploadservice.domain.entites.DocumentEntity;
+import com.antiplagiarism.fileuploadservice.domain.events.SaveDocumentEvent;
 import com.thedeanda.lorem.LoremIpsum;
 import org.junit.Before;
 import org.junit.Test;
@@ -56,14 +57,14 @@ public class DatabaseStorageServiceTest {
     public void saveGoodData() throws IOException {
         when(multipartFile.getName()).thenReturn("TestTitle.doc");
         when(multipartFile.getBytes()).thenReturn(lorem.getParagraphs(0, 30).getBytes());
-        databaseStorageService.save(multipartFile);
+        databaseStorageService.save(new SaveDocumentEvent(multipartFile.getName(),multipartFile.getBytes(),null));
     }
 
     @Test(expected = IOException.class)
     public void failSaveData() throws IOException {
         when(multipartFile.getName()).thenReturn("TestTitle.doc");
         when(multipartFile.getBytes()).thenReturn(null);
-        databaseStorageService.save(multipartFile);
+        databaseStorageService.save(new SaveDocumentEvent(multipartFile.getName(),multipartFile.getBytes(),null));
     }
 
 }
