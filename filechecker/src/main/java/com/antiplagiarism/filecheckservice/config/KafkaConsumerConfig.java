@@ -74,7 +74,6 @@ public class KafkaConsumerConfig {
     @KafkaListener(topics = "fileadded", groupId = "antiplagiarism", containerFactory = "kafkaListenerContainerFactory")
     public void listen(@Payload DocumentAddedKafkaEvent documentAddedKafkaEvent, @Header(KafkaHeaders.RECEIVED_PARTITION_ID) int partition) {
         log.warn("Got message of Class: " + documentAddedKafkaEvent.getClass().getSimpleName());
-        System.out.println("Got message of Class: " + documentAddedKafkaEvent.getClass().getSimpleName());
         ConvertByteToStringEvent event = new ConvertByteToStringEvent();
         event.setDocumentData(documentAddedKafkaEvent.getDocumentData());
         event.setDocumentDTO(documentAddedKafkaEvent.getDocumentDTO());

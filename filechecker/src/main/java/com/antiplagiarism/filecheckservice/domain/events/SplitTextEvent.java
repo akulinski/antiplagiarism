@@ -5,4 +5,5 @@ import lombok.*;
 @Getter @Setter @NoArgsConstructor @AllArgsConstructor @ToString
 public class SplitTextEvent {
     private String text;
+    private String fileName;
 }
