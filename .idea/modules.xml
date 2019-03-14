@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/COMMON/COMMON.iml" filepath="$PROJECT_DIR$/COMMON/COMMON.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/antiplagiarism.iml" filepath="$PROJECT_DIR$/.idea/antiplagiarism.iml" />
       <module fileurl="file://$PROJECT_DIR$/filechecker/demo.iml" filepath="$PROJECT_DIR$/filechecker/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eurekaserver/eurekaserver.iml" filepath="$PROJECT_DIR$/eurekaserver/eurekaserver.iml" />
       <module fileurl="file://$PROJECT_DIR$/fileuploadservice/fileuploadservice.iml" filepath="$PROJECT_DIR$/fileuploadservice/fileuploadservice.iml" />
     </modules>
   </component>

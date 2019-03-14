@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="COMMON" />
         <module name="demo" />
+        <module name="eurekaserver" />
         <module name="filechecker" />
         <module name="fileuploadservice" />
       </profile>
@@ -16,6 +17,7 @@
     <bytecodeTargetLevel>
       <module name="COMMON" target="1.5" />
       <module name="demo" target="1.8" />
+      <module name="eurekaserver" target="1.8" />
       <module name="filechecker" target="1.8" />
       <module name="fileuploadservice" target="1.8" />
     </bytecodeTargetLevel>
@@ -23,6 +25,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="demo" options="-parameters" />
+      <module name="eurekaserver" options="-parameters" />
       <module name="filechecker" options="-parameters" />
       <module name="fileuploadservice" options="-parameters" />
     </option>

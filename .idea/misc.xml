@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/fileuploadservice/pom.xml" />
         <option value="$PROJECT_DIR$/filechecker/pom.xml" />
         <option value="$PROJECT_DIR$/COMMON/pom.xml" />
+        <option value="$PROJECT_DIR$/eurekaserver/pom.xml" />
       </list>
     </option>
   </component>

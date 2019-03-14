@@ -46,3 +46,11 @@ elasticsearch:
     clustername: docker-cluster
     host: 192.168.0.26
     port: 9300
+
+
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:8761/eureka
+    instance:
+        preferIpAddress: true

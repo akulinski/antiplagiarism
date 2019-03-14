@@ -2,22 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0e35b4e-550e-4aa4-8965-dba8f676a992" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/config/EsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/core/interfaces/DocumentPartRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/domain/documents/DocumentPart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eurekaserver/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/filechecker/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/filechecker/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/config/KafkaConsumerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/config/KafkaConsumerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/core/services/ByteToStringService.java" beforeDir="false" afterPath="$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/core/services/ByteToStringService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/core/services/TextSplittingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/core/services/TextSplittingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/domain/events/SplitTextEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/domain/events/SplitTextEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filechecker/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/filechecker/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/FileCheckServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/FileCheckServiceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/filechecker/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/filechecker/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileuploadservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fileuploadservice/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileuploadservice/src/main/java/com/antiplagiarism/fileuploadservice/FileuploadserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/fileuploadservice/src/main/java/com/antiplagiarism/fileuploadservice/FileuploadserviceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fileuploadservice/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fileuploadservice/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileuploadservice/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fileuploadservice/src/main/resources/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/fileuploadservice/target/" />
     <ignored path="$PROJECT_DIR$/filechecker/target/" />
     <ignored path="$PROJECT_DIR$/COMMON/target/" />
+    <ignored path="$PROJECT_DIR$/eurekaserver/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,79 +48,32 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/core/services/TextSplittingService.java">
+        <entry file="file://$PROJECT_DIR$/fileuploadservice/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/config/EsConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="50" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="2625">
+              <caret line="175" column="40" selection-start-line="175" selection-start-column="40" selection-end-line="175" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/filechecker/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="165" column="8" selection-start-line="165" selection-start-column="8" selection-end-line="165" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/filechecker/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="47" column="12" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/config/KafkaConsumerConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="76" selection-start-line="76" selection-end-line="76" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/domain/events/ConvertByteToStringEvent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/domain/documents/DocumentPart.java">
+        <entry file="file://$PROJECT_DIR$/fileuploadservice/src/main/java/com/antiplagiarism/fileuploadservice/FileuploadserviceApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
               <caret line="19" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#991#992#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eurekaserver/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="51" selection-start-line="51" selection-end-line="87" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -156,9 +111,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/fileuploadservice/src/main/java/com/antiplagiarism/fileuploadservice/config/FileStorageProperties.java" />
-        <option value="$PROJECT_DIR$/fileuploadservice/src/main/resources/application-prod.yml" />
-        <option value="$PROJECT_DIR$/fileuploadservice/src/main/java/com/antiplagiarism/fileuploadservice/core/kafka/Consumer.java" />
         <option value="$PROJECT_DIR$/fileuploadservice/src/main/java/com/antiplagiarism/fileuploadservice/core/kafka/SampleMessage.java" />
         <option value="$PROJECT_DIR$/fileuploadservice/src/main/java/com/antiplagiarism/fileuploadservice/core/kafka/Producer.java" />
         <option value="$PROJECT_DIR$/fileuploadservice/src/main/java/com/antiplagiarism/fileuploadservice/domain/events/DocumentAddedKafkaEvent.java" />
@@ -166,7 +118,6 @@
         <option value="$PROJECT_DIR$/fileuploadservice/src/main/java/com/antiplagiarism/fileuploadservice/config/KafkaTopicConfig.java" />
         <option value="$PROJECT_DIR$/fileuploadservice/src/main/java/com/antiplagiarism/fileuploadservice/config/KafkaConsumerConfig.java" />
         <option value="$PROJECT_DIR$/fileuploadservice/src/test/resources/application.yml" />
-        <option value="$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/FileCheckServiceApplication.java" />
         <option value="$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/config/GuavaConfig.java" />
         <option value="$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/core/services/TextSplitingService.java" />
         <option value="$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/domain/DocumentDTO.java" />
@@ -190,12 +141,8 @@
         <option value="$PROJECT_DIR$/fileuploadservice/src/main/java/com/antiplagiarism/fileuploadservice/core/controllers/FileController.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/713ba593-46c7-4ea5-8584-8a62730749b7/console_1.sql" />
         <option value="$PROJECT_DIR$/fileuploadservice/src/main/java/com/antiplagiarism/fileuploadservice/core/services/KafkaStorage.java" />
-        <option value="$PROJECT_DIR$/fileuploadservice/src/main/java/com/antiplagiarism/fileuploadservice/FileuploadserviceApplication.java" />
-        <option value="$PROJECT_DIR$/fileuploadservice/pom.xml" />
-        <option value="$PROJECT_DIR$/fileuploadservice/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/fileuploadservice/src/main/java/com/antiplagiarism/fileuploadservice/domain/entites/DocumentEntity.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/713ba593-46c7-4ea5-8584-8a62730749b7/console_2.sql" />
-        <option value="$PROJECT_DIR$/fileuploadservice/src/main/resources/application-dev.yml" />
         <option value="$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/config/KafkaConsumerConfig.java" />
         <option value="$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/config/ElasticConfig.java" />
         <option value="$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/domain/events/SplitTextEvent.java" />
@@ -205,8 +152,16 @@
         <option value="$PROJECT_DIR$/filechecker/src/main/resources/application-dev.yml" />
         <option value="$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/core/services/TextSplittingService.java" />
         <option value="$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/config/EsConfig.java" />
+        <option value="$PROJECT_DIR$/eurekaserver/src/main/java/com/antiplagiarism/eurekaserver/EurekaserverApplication.java" />
         <option value="$PROJECT_DIR$/filechecker/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/filechecker/pom.xml" />
+        <option value="$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/FileCheckServiceApplication.java" />
+        <option value="$PROJECT_DIR$/eurekaserver/pom.xml" />
+        <option value="$PROJECT_DIR$/fileuploadservice/src/main/java/com/antiplagiarism/fileuploadservice/FileuploadserviceApplication.java" />
+        <option value="$PROJECT_DIR$/eurekaserver/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/fileuploadservice/src/main/resources/application-dev.yml" />
+        <option value="$PROJECT_DIR$/fileuploadservice/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/fileuploadservice/pom.xml" />
       </list>
     </option>
   </component>
@@ -222,11 +177,20 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="filecheckservice" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="eurekaserver" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="filecheckservice" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="eurekaserver" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="fileuploadservice" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="fileuploadservice" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
@@ -247,6 +211,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -254,195 +220,10 @@
               <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
               <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filechecker" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filechecker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filechecker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filechecker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filechecker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filechecker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filechecker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filecheckservice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filechecker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filecheckservice" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filechecker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filecheckservice" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filechecker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filecheckservice" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filechecker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filecheckservice" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filechecker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filecheckservice" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filechecker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filecheckservice" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="documents" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filechecker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filecheckservice" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="events" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="filechecker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="fileuploadservice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="fileuploadservice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="fileuploadservice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="fileuploadservice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="antiplagiarism" type="b2602c69:ProjectViewProjectNode" />
-              <item name="antiplagiarism" type="462c0819:PsiDirectoryNode" />
-              <item name="uploads" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -454,7 +235,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552411031409" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552419552003" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -462,7 +243,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
@@ -509,7 +290,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.FileCheckerService">
+  <component name="RunManager" selected="Spring Boot.FileuploadserviceApplication">
     <configuration name="DatabaseStorageServiceTest (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="fileuploadservice" />
       <extension name="coverage">
@@ -584,6 +365,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EurekaserverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eurekaserver" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.antiplagiarism.eurekaserver.EurekaserverApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FileCheckerService" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="demo" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.antiplagiarism.filecheckservice.FileCheckServiceApplication" />
@@ -615,6 +403,7 @@
       <item itemvalue="JUnit.com.antiplagiarism.filecheckservice.domain.documents in demo" />
       <item itemvalue="Spring Boot.FileCheckerService" />
       <item itemvalue="Spring Boot.FileuploadserviceApplication" />
+      <item itemvalue="Spring Boot.EurekaserverApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -657,7 +446,10 @@
       <workItem from="1552206232918" duration="15019000" />
       <workItem from="1552236031848" duration="254000" />
       <workItem from="1552321788856" duration="10515000" />
-      <workItem from="1552405008534" duration="5688000" />
+      <workItem from="1552405008534" duration="11283000" />
+      <workItem from="1552423549895" duration="3147000" />
+      <workItem from="1552502452408" duration="1328000" />
+      <workItem from="1552584317525" duration="598000" />
     </task>
     <task id="LOCAL-00001" summary="Added option of storing documents is files and in database">
       <created>1551600626022</created>
@@ -708,7 +500,14 @@
       <option name="project" value="LOCAL" />
       <updated>1552324982359</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="File checker service integration with elastic search">
+      <created>1552411066870</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1552411066870</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -744,7 +543,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81974000" />
+    <option name="totallyTimeSpent" value="92642000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -757,9 +556,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.4" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.41604277" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -796,7 +594,7 @@
       <window_info anchor="right" id="Bean Validation" order="9" weight="0.32994652" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27005348" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.4" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -818,7 +616,7 @@
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32897604" />
-      <window_info anchor="bottom" id="Run" order="14" weight="0.3899782" />
+      <window_info anchor="bottom" id="Run" order="14" visible="true" weight="0.3899782" />
       <window_info anchor="bottom" id="Duplicate detector" order="15" weight="0.32897604" />
       <window_info anchor="bottom" id="Database Console" order="16" weight="0.32897604" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -842,7 +640,8 @@
     <MESSAGE value="Created tests for storage controllers" />
     <MESSAGE value="Created Kafka consumer config" />
     <MESSAGE value="Created basic structure of file checker service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created basic structure of file checker service" />
+    <MESSAGE value="File checker service integration with elastic search" />
+    <option name="LAST_COMMIT_MESSAGE" value="File checker service integration with elastic search" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -897,15 +696,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/docker/postgres/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/config/KafkaProducerConfig.java" />
-    <entry file="file://$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/domain/events/DocumentAddedKafkaEvent.java" />
     <entry file="file://$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/domain/DocumentDTO.java" />
     <entry file="file://$PROJECT_DIR$/COMMON/src/main/java/domain/DocumentDTO.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1071,13 +861,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fileuploadservice/src/main/java/com/antiplagiarism/fileuploadservice/FileuploadserviceApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fileuploadservice/src/main/java/com/antiplagiarism/fileuploadservice/core/services/KafkaStorage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1108,24 +891,10 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/713ba593-46c7-4ea5-8584-8a62730749b7/console_2.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/fileuploadservice/src/main/resources/application-prod.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="53" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/COMMON/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fileuploadservice/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="78" selection-start-line="78" selection-end-line="82" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1135,16 +904,6 @@
           <caret line="39" column="67" lean-forward="true" selection-start-line="39" selection-start-column="67" selection-end-line="39" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/FileCheckServiceApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#355#356#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1159,13 +918,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/filechecker/src/main/resources/application-prod.yml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fileuploadservice/src/main/resources/application-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/filechecker/src/main/resources/application-dev.yml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1191,6 +943,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/core/services/TextSplittingService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/config/EsConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" selection-start-column="8" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/config/KafkaConsumerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="712">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/domain/events/ConvertByteToStringEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1211,54 +993,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/core/services/TextSplittingService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/config/KafkaConsumerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/config/EsConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="50" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fileuploadservice/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/filechecker/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="47" column="12" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
+        <state relative-caret-position="354">
+          <caret line="53" column="53" selection-start-line="53" selection-start-column="53" selection-end-line="53" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filechecker/src/main/java/com/antiplagiarism/filecheckservice/FileCheckServiceApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/filechecker/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="165" column="8" selection-start-line="165" selection-start-column="8" selection-end-line="165" selection-end-column="8" />
+        <state relative-caret-position="590">
+          <caret line="181" selection-start-line="181" selection-end-line="181" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eurekaserver/src/main/java/com/antiplagiarism/eurekaserver/EurekaserverApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#364#365#0" expanded="true" />
+            <element signature="e#438#439#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fileuploadservice/src/main/resources/application-prod.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="53" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eurekaserver/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fileuploadservice/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="49" column="11" lean-forward="true" selection-start-line="49" selection-start-column="11" selection-end-line="49" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fileuploadservice/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="24" lean-forward="true" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fileuploadservice/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2625">
+          <caret line="175" column="40" selection-start-line="175" selection-start-column="40" selection-end-line="175" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eurekaserver/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" selection-start-line="51" selection-end-line="87" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fileuploadservice/src/main/java/com/antiplagiarism/fileuploadservice/FileuploadserviceApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#991#992#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1314,7 +1131,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>demo</last-edited>
+          <last-edited>eurekaserver</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
