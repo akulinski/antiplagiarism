@@ -35,3 +35,7 @@ spring:
         ddl-auto: update
 
 
+elasticsearch:
+  clustername: docker-cluster
+  host: 172.22.0.3
+  port: 9200

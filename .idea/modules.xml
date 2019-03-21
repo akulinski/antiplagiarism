@@ -6,7 +6,10 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/antiplagiarism.iml" filepath="$PROJECT_DIR$/.idea/antiplagiarism.iml" />
       <module fileurl="file://$PROJECT_DIR$/filechecker/demo.iml" filepath="$PROJECT_DIR$/filechecker/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/eurekaserver/eurekaserver.iml" filepath="$PROJECT_DIR$/eurekaserver/eurekaserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/filechecker/filecheckservice.iml" filepath="$PROJECT_DIR$/filechecker/filecheckservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/fileuploadservice/fileuploadservice.iml" filepath="$PROJECT_DIR$/fileuploadservice/fileuploadservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jhipster-registry/jhipster-registry.iml" filepath="$PROJECT_DIR$/jhipster-registry/jhipster-registry.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-registry/service-registry.iml" filepath="$PROJECT_DIR$/service-registry/service-registry.iml" />
     </modules>
   </component>
 </project>
